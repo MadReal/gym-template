@@ -1,0 +1,100 @@
+<form
+	class="form mb-6"
+	name="contact"
+	method="post"
+	data-netlify="true"
+	data-netlify-honeypot="bot-field"
+	hidden
+>
+	<input type="hidden" name="form-name" />
+	<p hidden>
+		<label>Don’t fill this out: <input name="bot-field" /></label>
+	</p>
+	<div class="field">
+		<div class="checkboxes clearfix">
+			<div class="checkbox">
+				<label
+					><input type="checkbox" name="website" /><span>Website</span></label
+				>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" name="app" /><span>App</span></label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" name="logo" /><span>Logo</span></label>
+			</div>
+			<div class="checkbox">
+				<label
+					><input type="checkbox" name="creative-work" /><span
+						>Creative Work</span
+					></label
+				>
+			</div>
+			<div class="checkbox">
+				<label
+					><input type="checkbox" name="photo-video" /><span
+						>Photo & Video</span
+					></label
+				>
+			</div>
+		</div>
+		<div class="checkboxes clearfix">
+			<div class="checkbox">
+				<label
+					><input type="checkbox" name="ads" /><span>Advertisement</span></label
+				>
+			</div>
+			<div class="checkbox">
+				<label
+					><input type="checkbox" name="social-media-management" /><span
+						>Social Media Management</span
+					></label
+				>
+			</div>
+		</div>
+	</div>
+	<div class="field mt-6">
+		<div class="columns">
+			<div class="column is-half">
+				<div class="field">
+					<label class="label label--normal" for="name">Name</label>
+					<input
+						class="input"
+						type="text"
+						id="name"
+						name="name"
+						:placeholder="$t('contact.form.name_placeholder')"
+					/>
+				</div>
+			</div>
+			<div class="column is-half">
+				<div class="field">
+					<label class="label label--normal" for="email">Email</label>
+					<input
+						class="input"
+						type="email"
+						id="email"
+						name="email"
+						:placeholder="$t('contact.form.email_placeholder')"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="field mt-6">
+		<label class="label label--normal" for="textarea">Details</label>
+		<div class="control">
+			<textarea
+				class="textarea"
+				id="textarea"
+				name="textarea"
+				:placeholder="$t('contact.form.details_placeholder')"
+			></textarea>
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<button class="button form__button" type="submit">Send Request</button>
+		</div>
+	</div>
+</form>

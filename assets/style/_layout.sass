@@ -1,0 +1,29 @@
+.view
+    position: relative
+    background-color: $white
+
+// add some small spacing on mobile & tablet only 
+.container
+    @include until($desktop)
+        padding: 0 0.5rem
+
+        // don't use padding if PARENT is navbar
+        .navbar &
+            padding: 0
+
+    &.is-smaller
+        max-width: 776px
+        // @media screen and (min-width: 1024px)
+
+// personal variables
+.is-color-primary
+    color: $primary
+
+.is-color-secondary
+    color: $color-secondary
+
+// fixes in Bulma classes
+.columns
+    margin: 0 auto
+    &:last-child
+        margin-bottom: 0
