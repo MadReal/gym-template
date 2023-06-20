@@ -5,8 +5,8 @@ export const gymInfo = {
 	email: "info@palestra.com",
 	addressLine1: "Indirizzo palestra, 14",
 	addressLine2: "CAP Città",
-	facebook: "facebook",
-	instagram: "instagram",
+	facebook: "",
+	instagram: "",
 	prices: {
 		iscrizione: 30,
 		one: 39,

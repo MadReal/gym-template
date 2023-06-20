@@ -4,9 +4,9 @@ nav.navbar.is-transparent.is-uppercase(role="navigation" aria-label="main naviga
     .navbar-brand
       NuxtLink.navbar-item(to="/") {{ gymInfo.name }}
       div.navbar-burger(role="button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample")
-        a.navbar-item.navbar-item--social#first(href="https://www.facebook.com/newbiocenter/", target="_blank")
+        a.navbar-item.navbar-item--social#first(:href="`https://www.facebook.com/${gymInfo.facebook}`", target="_blank")
           SVGIcon(iconName="icon-facebook")
-        a.navbar-item.navbar-item--social(href="https://www.instagram.com/new_bio_center/", target="_blank")
+        a.navbar-item.navbar-item--social(:href="`https://www.instagram.com/${gymInfo.instagram}`", target="_blank")
           SVGIcon(iconName="icon-instagram")
 
     .navbar-menu
@@ -15,9 +15,9 @@ nav.navbar.is-transparent.is-uppercase(role="navigation" aria-label="main naviga
         NuxtLink.navbar-item(:to="{ path: '/', hash: '#attrezzatura' }", :external="true") TIPOLOGIE DI ALLENAMENTO
         NuxtLink.navbar-item(:to="{ path: '/', hash: '#corsi' }", :external="true") CORSI
         // social networks
-        a.navbar-item.navbar-item--social#first(href="https://www.facebook.com/newbiocenter/", target="_blank")
+        a.navbar-item.navbar-item--social#first(:href="`https://www.facebook.com/${gymInfo.facebook}`", target="_blank")
           SVGIcon(icon-name="icon-facebook")
-        a.navbar-item.navbar-item--social(href="https://www.instagram.com/new_bio_center/", target="_blank")
+        a.navbar-item.navbar-item--social(:href="`https://www.instagram.com/${gymInfo.instagram}`", target="_blank")
           SVGIcon(icon-name="icon-instagram")
 </template>
 
