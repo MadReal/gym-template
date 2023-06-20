@@ -15,7 +15,6 @@ export const gymInfo = {
 		year: 399,
 	},
 	courses: ["Cross Training", "Fit Boxe", "Pilates", "Hatha Yoga", "Tabata"],
-	// courses: [],
 };
 
 export default gymInfo;

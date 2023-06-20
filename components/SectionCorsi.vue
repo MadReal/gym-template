@@ -20,7 +20,7 @@ section.section.courses#corsi
 
 
 <script setup lang="ts">
-import { gymInfo } from '~/plugins/gym-info';
+import { gymInfo } from "~/gymInfo";
 import { formattedPhone } from '~/sharedMixin';
 </script>
 
@@ -29,8 +29,6 @@ import { formattedPhone } from '~/sharedMixin';
 @import @/assets/style/_bulma-variables.sass
 @import @/assets/style/_mixins.sass
 @import "../node_modules/bulma/sass/utilities/mixins.sass"
-
-$height-mobile: 260px
 
 .courses
 	position: relative
@@ -62,7 +60,7 @@ $height-mobile: 260px
 		@include mobile
 			padding: 0
 			width: 100%
-			height: $height-mobile
+			height: 260px
 
 	&__info
 		padding: 1.4rem 3rem
@@ -88,3 +86,4 @@ $height-mobile: 260px
 			@include mobile
 				color: $grey-dark
 </style>
+~/gymInfo

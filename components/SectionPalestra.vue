@@ -22,7 +22,8 @@ section.section.section-palestra
 </template>
 
 <script setup lang="ts">
-import { gymInfo } from '~/plugins/gym-info';
+import { gymInfo } from "~/gymInfo";
+
 import { formattedPhone } from '~/sharedMixin';
 </script>
 
@@ -75,3 +76,4 @@ ul li
 		& + li::before
 			content: none
 </style>
+~/gymInfo

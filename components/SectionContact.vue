@@ -18,7 +18,8 @@ section.section
 
 
 <script setup lang="ts">
-import { gymInfo } from '~/plugins/gym-info';
+import { gymInfo } from "~/gymInfo";
+
 import { formattedPhone } from '~/sharedMixin';
 </script>
 
@@ -68,3 +69,4 @@ import { formattedPhone } from '~/sharedMixin';
 				text-decoration: underline
 
 </style>
+~/gymInfo

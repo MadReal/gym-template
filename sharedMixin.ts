@@ -1,4 +1,4 @@
-import { gymInfo } from "~/plugins/gym-info";
+import { gymInfo } from "~/gymInfo";
 
 export const formattedPhone = computed(() => {
 	return gymInfo.phone.replace(/\s/g, "");

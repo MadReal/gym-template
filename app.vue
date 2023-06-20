@@ -12,5 +12,5 @@
 
 
 <script setup lang="ts">
-import { gymInfo } from '~/plugins/gym-info';
+import { gymInfo } from "~/gymInfo";
 </script>

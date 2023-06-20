@@ -28,7 +28,8 @@ section.section#abbonamenti
 
 
 <script setup lang="ts">
-import { gymInfo } from '~/plugins/gym-info';
+import { gymInfo } from "~/gymInfo";
+
 import { formattedPhone } from '~/sharedMixin';
 </script>
 
@@ -88,3 +89,4 @@ hr.title-decor
 	margin: 2.6rem auto
 		
 </style>
+~/gymInfo

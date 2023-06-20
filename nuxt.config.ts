@@ -1,16 +1,8 @@
-import { gymInfo } from "~/plugins/gym-info";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
-// const gymInfo = {
-// 	name: "Gym Website",
-// 	description: "Gym Website",
-// 	phone: "000 1122334",
-// 	email: "info@palestra.com",
-// 	addressLine1: "Indirizzo palestra, 14",
-// 	addressLine2: "CAP Città",
-// 	facebook: "facebook",
-// 	instagram: "instagram",
-// };
+const gymInfo = {
+	name: "Gym Website",
+	description: "Gym Website",
+};
 
 export default defineNuxtConfig({
 	app: {
@@ -28,5 +20,4 @@ export default defineNuxtConfig({
 		},
 	},
 	css: ["~/assets/style/main.sass"],
-	// plugins: [{ src: "~/plugins/gym-info.ts", mode: "client" }],
 });

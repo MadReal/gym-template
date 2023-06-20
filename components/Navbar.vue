@@ -23,7 +23,8 @@ nav.navbar.is-transparent.is-uppercase(role="navigation" aria-label="main naviga
 
 
 <script setup lang="ts">
-import { gymInfo } from '~/plugins/gym-info';
+import { gymInfo } from "~/gymInfo";
+
 </script>
 
 
@@ -61,3 +62,4 @@ import { gymInfo } from '~/plugins/gym-info';
     padding-right: 1.2rem
   
 </style>
+~/gymInfo

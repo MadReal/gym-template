@@ -14,7 +14,8 @@ footer.footer
 
 
 <script setup lang="ts">
-import { gymInfo } from '~/plugins/gym-info';
+import { gymInfo } from "~/gymInfo";
+
 
 const currentYear = new Date().getFullYear()
 </script>
@@ -49,3 +50,4 @@ const currentYear = new Date().getFullYear()
     margin-top: 0.1rem
     width: 7rem
 </style>
+~/gymInfo
