@@ -13,7 +13,6 @@ header.hero.is-large
 </template>
 
 <script setup lang="ts">
-import { gymInfo } from '~/plugins/gym-info';
 import { formattedPhone } from '~/sharedMixin';
 </script>
 

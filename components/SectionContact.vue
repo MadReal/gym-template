@@ -4,17 +4,23 @@ section.section
 		.columns
 			.column
 				SVGIcon(iconName="icon-map").column__icon
-				.column__text: a(href="", target="_blank").column__text #[strong Giovanni Manardo, 20 #[br] Ferrara, 44124]
+				.column__text: a(href="", target="_blank").column__text #[strong {{ gymInfo.addressLine1 }} #[br] {{ gymInfo.addressLine2 }}]
 
 			.column
 				SVGIcon(iconName="icon-clock").column__icon
-				p.column__text #[strong Lunedi-Venerdi] 09–21 #[br] #[strong Sabato] 09:30–15 #[br] #[strong Domenica] Chiuso #[br]
+				p.column__text #[strong Lunedi-Sabato] 09–21 #[br] #[strong Domenica] Chiuso #[br]
 
 			.column
 				SVGIcon(iconName="icon-phone").column__icon               
-				p.column__text #[a(href="tel:05321861904", target="_blank") #[strong Telefono] 0532 1861904] #[br]
-					| #[a(href="https://wa.me/3279059876", target="_blank") #[strong WhatsApp] 327 9059876]
+				p.column__text #[a(:href="`tel:${formattedPhone}`", target="_blank") #[strong Telefono] {{ gymInfo.phone }}] #[br]
+					| #[a(:href="`mailto:${gymInfo.email}`", target="_blank") #[strong Email] {{ gymInfo.email }}]
 </template>
+
+
+<script setup lang="ts">
+import { gymInfo } from '~/plugins/gym-info';
+import { formattedPhone } from '~/sharedMixin';
+</script>
 
 
 <style lang="sass" scoped>

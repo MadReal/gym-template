@@ -5,8 +5,7 @@ section.section.section-palestra
 			.column.is-one-third
 				h3.is-size-2.is-color-secondary.has-text-weight-bold Palestra
 				p {{ gymInfo.addressLine1 }}, {{ gymInfo.addressLine2 }}
-				p.mt-4.mb-4 #[strong Lunedi-Venerdi] 09-21 #[br]           
-					| #[strong Sabato] 09:30-15 #[br]
+				p.mt-4.mb-4 #[strong Lunedi-Sabato] 09-21 #[br]           
 					| #[strong Domenica] Chiuso
 				p #[strong Tel.] #[a(:href="`tel:${formattedPhone}`") {{ gymInfo.phone }}] #[br]
 					| #[strong Email] #[a.email(:href="`mailto:${gymInfo.email}`") {{ gymInfo.email }}]
