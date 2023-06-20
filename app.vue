@@ -5,8 +5,12 @@
     SectionPalestra
     SectionPrezzi
     SectionTipiAllenamento
-    SectionCorsi
+    SectionCorsi(v-show="gymInfo.courses.length > 0")
     SectionContact
     Footer
 </template>
 
+
+<script setup lang="ts">
+import { gymInfo } from '~/plugins/gym-info';
+</script>
