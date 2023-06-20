@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section#abbonamenti
 	.container 
-		h2.is-size-3.has-text-centered.has-text-weight-bold Gli Abbonamenti
+		h2.is-size-3.has-text-centered.has-text-weight-bold Abbonamenti
 		hr.title-decor
 
 		.plans

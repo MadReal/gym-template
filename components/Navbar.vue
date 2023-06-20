@@ -11,7 +11,7 @@ nav.navbar.is-transparent.is-uppercase(role="navigation" aria-label="main naviga
 
     .navbar-menu
       .navbar-end
-        NuxtLink.navbar-item(:to="{ path: '/', hash: '#abbonamenti' }", :external="true") GLI ABBONAMENTI
+        NuxtLink.navbar-item(:to="{ path: '/', hash: '#abbonamenti' }", :external="true") ABBONAMENTI
         NuxtLink.navbar-item(:to="{ path: '/', hash: '#attrezzatura' }", :external="true") TIPOLOGIE DI ALLENAMENTO
         NuxtLink.navbar-item(:to="{ path: '/', hash: '#corsi' }", :external="true") CORSI
         // social networks
